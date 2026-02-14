@@ -1879,7 +1879,7 @@ function actualizarMomentoDia() {
         // Tarde
         momento = {
             icono: '☀️',
-            titulo: 'Buenas tardes, mi Linda Muchachita',
+            titulo: 'Buenas tardes, mi Linda Quiteñita',
             mensaje: `Ya es tarde, son las ${horaCompleta} y sigues ocupando espacio en mi corazón desde que levanto hasta el momento de hoy. 💖`
         };
     } else {
