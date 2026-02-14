@@ -356,39 +356,38 @@ function controlarReproductoresAudio() {
         const visualizerId = audio.getAttribute('data-visualizer');
         const visualizer = document.getElementById(visualizerId);
         
-        audio.addEventListener('play', function() {
-            console.log(`Audio ${index + 1} comenzó a reproducirse`);
-            
-            // Activar visualizador
+        // Función para activar el visualizer
+        const activarVisualizer = () => {
             if (visualizer) {
                 visualizer.classList.add('playing');
             }
-            
-            // Pausar todos los demás audios
-            audios.forEach((otroAudio, otroIndex) => {
-                if (otroAudio !== audio && !otroAudio.paused) {
-                    otroAudio.pause();
-                    const otroVisualizerId = otroAudio.getAttribute('data-visualizer');
-                    const otroVisualizer = document.getElementById(otroVisualizerId);
-                    if (otroVisualizer) {
-                        otroVisualizer.classList.remove('playing');
-                    }
-                    console.log(`Audio ${otroIndex + 1} fue pausado`);
-                }
-            });
-        });
+        };
         
-        audio.addEventListener('pause', function() {
+        // Función para desactivar el visualizer
+        const desactivarVisualizer = () => {
             if (visualizer) {
                 visualizer.classList.remove('playing');
             }
-        });
+        };
         
-        audio.addEventListener('ended', function() {
-            if (visualizer) {
-                visualizer.classList.remove('playing');
+        // Eventos para desktop
+        audio.addEventListener('play', activarVisualizer);
+        audio.addEventListener('pause', desactivarVisualizer);
+        audio.addEventListener('ended', desactivarVisualizer);
+        
+        // Eventos específicos para móvil (touch)
+        audio.addEventListener('touchstart', function() {
+            if (audio.paused) {
+                audio.play().then(activarVisualizer).catch(console.warn);
+            } else {
+                audio.pause();
             }
-        });
+        }, { passive: true });
+        
+        // Verificar estado inicial
+        if (!audio.paused) {
+            activarVisualizer();
+        }
     });
     
     console.log(`Se configuraron ${audios.length} reproductores de audio`);
