@@ -1876,7 +1876,7 @@ function actualizarMomentoDia() {
             titulo: 'Good Morning jeje mi Amor',
             mensaje: `Hoy es un nuevo día son las ${horaCompleta} espero que estés teniendo un día maravilloso. 💕`
         };
-    } else if (hora >= 12 && hora < 18) {
+    } else if (hora >= 12 && hora < 19) {
         // Tarde
         momento = {
             icono: '☀️',
