@@ -1384,6 +1384,9 @@ function reproducirVideo() {
     const overlay = document.getElementById('video-overlay');
     
     if (video && overlay) {
+        // Establecer volumen alto para el video
+        video.volume = 1.0;
+        
         // Ocultar el overlay
         overlay.style.display = 'none';
         
@@ -1494,8 +1497,8 @@ function inicializarSistemaMusica() {
 // Función para iniciar música de fondo
 function iniciarMusicaFondo() {
     // Establecer volumen bajo desde el inicio
-    musicaFondo.volume = 0.3;
-    console.log('🔊 Volumen de música de fondo establecido al 30%');
+    musicaFondo.volume = 0.20;
+    console.log('🔊 Volumen de música de fondo establecido al 15%');
     
     const intentarReproducir = () => {
         musicaFondo.play().then(() => {
@@ -1577,8 +1580,8 @@ function configurarEventosCanciones() {
         console.log(`🎵 Configurando canción ${index + 1}`);
         
         // Establecer volumen bajo para todas las canciones
-        audio.volume = 0.3;
-        console.log(`🔊 Volumen de canción ${index + 1} establecido al 30%`);
+        audio.volume = 0.15;
+        console.log(`🔊 Volumen de canción ${index + 1} establecido al 10%`);
         
         audio.addEventListener('play', () => {
             console.log(`▶️ Canción ${index + 1} iniciada`);
@@ -1798,10 +1801,10 @@ function finalizarAudioPersonalizado() {
             );
             
             if (!hayCancionActiva) {
-                // Asegurar que el volumen de fondo esté al 30% antes de reanudar
-                musicaFondo.volume = 0.3;
+                // Asegurar que el volumen de fondo esté al 15% antes de reanudar
+                musicaFondo.volume = 0.20;
                 musicaFondo.play().then(() => {
-                    console.log('▶️ Música de fondo reanudada al 30% después de audio personalizado');
+                    console.log('▶️ Música de fondo reanudada al 15% después de audio personalizado');
                 }).catch(err => {
                     console.warn('⚠️ Error al reanudar música de fondo:', err);
                 });
