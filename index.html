@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Ti, Mi Sirey Toapanta💖</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile-optimization.css">
+</head>
+<body>
+    <!-- Contenedor de corazones flotantes -->
+    <div class="hearts-container"></div>
+
+    <!-- PORTADA -->
+    <section class="portada">
+        <div class="contenido-portada">
+            <h1 class="titulo-principal">Para la pequeñita que cautivó mi corazón, la mujer de mi vida 💕</h1>
+            <p class="subtitulo">Esta página existe porque tú existes en mi vida. Un espacio especial creado con todo mi corazón</p>
+            <p class="fecha-especial">30 de Marzo, 2025 - El día que cambió todo ✨</p>
+            <button class="btn-comenzar" onclick="scrollToSection('.contador')">
+                Comenzar ✨
+            </button>
+            <div class="flecha-animada">🔻</div>
+        </div>
+    </section>
+
+    <!-- CONTADOR DE TIEMPO JUNTOS -->
+    <section class="contador">
+        <h2>⏰ EL TIEMPO QUE HEMOS PASADO JUNTOS</h2>
+        <p class="descripcion-contador">Desde que llegaste a mi vida han pasado...</p>
+        <div class="tiempo-container">
+            <div class="tiempo-box">
+                <span class="numero" id="dias">0</span>
+                <span class="etiqueta">Días</span>
+            </div>
+            <div class="tiempo-box">
+                <span class="numero" id="horas">0</span>
+                <span class="etiqueta">Horas</span>
+            </div>
+            <div class="tiempo-box">
+                <span class="numero" id="minutos">0</span>
+                <span class="etiqueta">Minutos</span>
+            </div>
+            <div class="tiempo-box">
+                <span class="numero" id="segundos">0</span>
+                <span class="etiqueta">Segundos</span>
+            </div>
+        </div>
+        <p class="nota-fecha">
+            <medium-big>Y espero seguir compartiendo muchos más contigo 💞</medium-big>
+        </p>
+    </section>
+
+    <!-- CARRUSEL DE MOMENTOS DEL DÍA -->
+    <section class="momentos-dia">
+        <div class="momento-card" id="momento-del-dia">
+            <div class="momento-icono" id="momento-icono">🌅</div>
+            <h2 id="momento-titulo">Buenos días, mi amor</h2>
+            <p id="momento-mensaje">Espero que hoy sea un día hermoso para ti 💕</p>
+        </div>
+    </section>
+    
+    <!-- Audio de fondo (oculto, se reproduce automáticamente) -->
+    <audio id="background-music" loop>
+        <source src="musica/fondo.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- CIELO ESTRELLADO CON SU NOMBRE -->
+    <section class="cielo-estrellado">
+        <h2>✨ NUESTRO CIELO ESTRELLADO ✨</h2>
+        <p class="descripcion-cielo">En el universo infinito, tu nombre brilla más que todas las estrellas 🌟</p>
+        <canvas id="starry-sky"></canvas>
+        <div class="fireflies-container" id="fireflies"></div>
+    </section>
+    <!-- LIBRO DE AVENTURAS INTERACTIVO (CON HISTORIA COMPLETA) -->
+    <section class="libro-aventuras">
+        <h2>NUESTRA HISTORIA 📖</h2>
+        <p class="descripcion-libro">Nuestra historia completa escrita en páginas.✨</p>
+        
+        <div class="libro-container">
+            <div class="libro">
+                <!-- Página 1: EL PRIMER DÍA - Parte 1 -->
+                <div class="pagina pagina-activa" data-pagina="1">
+                    <div class="contenido-pagina">
+                        <h3>EL PRIMER DÍA ✨</h3>
+                        <div class="ilustracion">💕</div>
+                        <p>Todo comenzó el 8 de marzo de 2025, un día que cambió mi vida para siempre. Desde la primera vez que te vi, tenías algo que me cautivaba de una manera que ni yo mismo podía entender.</p>
+                        <p>Nos miramos, compartimos un par de palabras, parecías lorito porque no podías parar de hablar.</p>
+                    </div>
+                </div>
+                
+                <!-- Página 2: EL PRIMER DÍA - Parte 2 -->
+                <div class="pagina" data-pagina="2">
+                    <div class="contenido-pagina">
+                        <h3>EL PRIMER DÍA ✨ (continuación)</h3>
+                        <div class="ilustracion">😄</div>
+                        <p>Me contaste un sinfín de cosas y yo solo te escuchaba, no sabía qué más decir. Me enamoró tu forma de ser, tu risa, tus ojitos bonitos, la energía que tenías, eras atenta conmigo aún sin conocerme bien y eso me llegó al shungo.</p>
+                        <p>De todo eso lo que más me enamoró y me dejó sorprendido fue la manera en que me saludaste con el dedo del medio JAJAJA. Qué maldita forma de conquistar, pero funcionó.</p>
+                    </div>
+                </div>
+                
+                <!-- Página 3: LAS PRIMERAS CONVERSACIONES - Parte 1 -->
+                <div class="pagina" data-pagina="3">
+                    <div class="contenido-pagina">
+                        <h3>LAS PRIMERAS CONVERSACIONES 💕</h3>
+                        <div class="ilustracion">💬</div>
+                        <p>Recuerdo que nuestras conversaciones eran sobre más cosas tuyas que mías, no tenía nada interesante que contarte pero tú siempre encontrabas la manera de hacerme hablar. A veces pienso que solo era para demostrar mi acento cuencano jajaja.</p>
+                        <p>Hablábamos de las cosas que te gustaban, tu manera de afrontar las cosas y cómo te esforzabas para conseguir lo que más querías en la vida.</p>
+                    </div>
+                </div>
+                
+                <!-- Página 4: LAS PRIMERAS CONVERSACIONES - Parte 2 -->
+                <div class="pagina" data-pagina="4">
+                    <div class="contenido-pagina">
+                        <h3>LAS PRIMERAS CONVERSACIONES 💕 (continuación)</h3>
+                        <div class="ilustracion">💭</div>
+                        <p>Eso me despertó el interés por conocerte más y querer ser parte de la vida que tenías planeada. Ya estando más en confianza y siendo novios, empezaste a preguntarme cosas sobre mí, mis gustos, mis sueños y mis miedos.</p>
+                        <p>Nuestras conversaciones ya involucraban un futuro juntos...</p>
+                    </div>
+                </div>
+                
+                <!-- Página 5: LAS PRIMERAS CONVERSACIONES - Parte 3 -->
+                <div class="pagina" data-pagina="5">
+                    <div class="contenido-pagina">
+                        <h3>LAS PRIMERAS CONVERSACIONES 💕 (continuación)</h3>
+                        <div class="ilustracion">💍</div>
+                        <p>Cuando me dijiste que querías tener hijos conmigo y que querías casarte conmigo fue algo que nunca pensé que me dirías y escucharlo así de repente me hizo muy feliz.</p>
+                        <p>Aún sabiendo que no soy muy de esas personas que quieren casarse y tener hijos, pero con el tiempo la idea de imaginar todo a tu lado simplemente hace que me sienta muy agradecido de haberte conocido.</p>
+                    </div>
+                </div>
+                
+                <!-- Página 6: NUESTRAS CANCIONES -->
+                <div class="pagina" data-pagina="6">
+                    <div class="contenido-pagina">
+                        <h3>NUESTRAS CANCIONES 🎵</h3>
+                        <div class="ilustracion">🎶</div>
+                        <p>Hay canciones que me recuerdan a ti, momentos que quedaron grabados en mi memoria con música de fondo.</p>
+                        <p>Cada melodía tiene tu nombre.</p>
+                    </div>
+                </div>
+                
+                <!-- Página 7: CADA MOMENTO - Parte 1 -->
+                <div class="pagina" data-pagina="7">
+                    <div class="contenido-pagina">
+                        <h3>CADA MOMENTO... 💭</h3>
+                        <div class="ilustracion">😊</div>
+                        <p>Las cosas que hemos compartido así sean simples o pequeñas son para mí la prueba de amor más real. Compartir risas, chistes tontos, salir a caminar hablando de temas que no tienen mucho sentido.</p>
+                        <p>Ponernos a ver series juntos comportándonos como una familia es lo que más me gusta de nosotros.</p>
+                    </div>
+                </div>
+                
+                <!-- Página 8: CADA MOMENTO - Parte 2 -->
+                <div class="pagina" data-pagina="8">
+                    <div class="contenido-pagina">
+                        <h3>CADA MOMENTO... 💭 (continuación)</h3>
+                        <div class="ilustracion">🚶‍♂️🚶‍♀️</div>
+                        <p>Yo sé que no son grandes momentos pero yo los valoro mucho porque al acompañarme al hacer todo eso conmigo también me estás diciendo que me amas.</p>
+                        <p>Y eso se fortalece con el esfuerzo que haces al acompañarme en mis miniaventuras jsjsjs...</p>
+                    </div>
+                </div>
+                
+                <!-- Página 9: CADA MOMENTO - Parte 3 -->
+                <div class="pagina" data-pagina="9">
+                    <div class="contenido-pagina">
+                        <h3>CADA MOMENTO... 💭 (continuación)</h3>
+                        <div class="ilustracion">✨</div>
+                        <p>Y con ansias espero que sigamos creando más momentos juntos, porque cada instante a tu lado es un tesoro que guardo en mi shungo para siempre.</p>
+                    </div>
+                </div>
+                
+                <!-- Página 10: MOMENTOS ESPECIALES - Parte 1 -->
+                <div class="pagina" data-pagina="10">
+                    <div class="contenido-pagina">
+                        <h3>MOMENTOS ESPECIALES 🎉</h3>
+                        <div class="ilustracion">🌟</div>
+                        <p>SIREY mi pequeñita hermosa, no importa cuál sea el día, estando contigo todo es lindo. Despertar y ver tu carita toda bella o verte en las fotos que me mandas cuando estamos lejos.</p>
+                        <p>Las veces que hemos compartido algo juntos sea en abundancia o no y las veces que en llamada prendes la cámara y te veo dormir...</p>
+                    </div>
+                </div>
+                
+                <!-- Página 11: MOMENTOS ESPECIALES - Parte 2 -->
+                <div class="pagina" data-pagina="11">
+                    <div class="contenido-pagina">
+                        <h3>MOMENTOS ESPECIALES 🎉 (continuación)</h3>
+                        <div class="ilustracion">💖</div>
+                        <p>No hace falta que se celebre algo, me basta con tenerte porque eres tan única que haces que mis días se sientan especiales así no estés físicamente conmigo.</p>
+                        <p>No sabes lo feliz que me haces con solo existir en mi vida.</p>
+                    </div>
+                </div>
+                
+                <!-- Página 12: GRACIAS MUJER MÍA - Parte 1 -->
+                <div class="pagina" data-pagina="12">
+                    <div class="contenido-pagina">
+                        <h3>GRACIAS MUJER MÍA ❤️</h3>
+                        <div class="ilustracion">🙏</div>
+                        <p>Aunque hemos pasado por peleas, enojos y a veces hemos decidido alejarnos y desviarnos un poco, no sabes cómo me gustaría no haber llegado a tales puntos.</p>
+                        <p>Siempre he sabido que no soy perfecto y tengo muchas cosas que mejorar. He sido de todo menos un buen novio.</p>
+                    </div>
+                </div>
+                
+                <!-- Página 13: GRACIAS MUJER MÍA - Parte 2 -->
+                <div class="pagina" data-pagina="13">
+                    <div class="contenido-pagina">
+                        <h3>GRACIAS MUJER MÍA ❤️ (continuación)</h3>
+                        <div class="ilustracion">💔</div>
+                        <p>Hasta he pensado que incluso mereces alguien que te sepa amar más que yo... No soy tan detallista, ni tan romántico, ni tan atento, ni tan cariñoso, ni tan todo lo que una chica como tú merece.</p>
+                        <p>Pero no quiero que te rindas conmigo.</p>
+                    </div>
+                </div>
+                
+                <!-- Página 14: GRACIAS MUJER MÍA - Parte 3 -->
+                <div class="pagina" data-pagina="14">
+                    <div class="contenido-pagina">
+                        <h3>GRACIAS MUJER MÍA ❤️ (continuación)</h3>
+                        <div class="ilustracion">💝</div>
+                        <p>Te demuestro a través de esto que te amo con todo mi ser aunque a veces no te lo diga a diario... Sé paciente conmigo por favor.</p>
+                        <p>GRACIAS por seguirme eligiendo.</p>
+                    </div>
+                </div>
+                
+                <!-- Página 15: FINAL -->
+                <div class="pagina" data-pagina="15">
+                    <div class="contenido-pagina">
+                        <h3>POR SIEMPRE ❤️✨</h3>
+                        <div class="ilustracion">💍</div>
+                        <p>Espero sigamos dándole más páginas a nuestra historia con momentos especiales y poder ver qué nos trae el futuro siempre y cuando sea contigo.</p>
+                        <p>Mi querida y bella SIREY, esta historia apenas comienza...</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="libro-controles">
+                <button class="btn-libro" id="btn-anterior" onclick="cambiarPagina(-1)">❮ Anterior</button>
+                <span class="numero-pagina" id="pagina-actual">1 / 15</span>
+                <button class="btn-libro" id="btn-siguiente" onclick="cambiarPagina(1)">Siguiente ❯</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE MÚSICA INTERACTIVA -->
+    <section class="musica">
+        <h2>LO NUESTRO TRANSFORMADO EN CANCIONES 🎵🗣️ </h2>
+        <p class="descripcion-musica">Una colección de música que nos representa cuando estamos cerca y cuando la distancia aparece.<br>Cada canción guarda una emoción y un momento de nuestra historia, porque a veces la música dice lo que nosotros sentimos.</p>
+        
+        <div class="canciones-grid">
+            <!-- Canción 1 -->
+            <div class="cancion-card">
+                <div class="icono-musica">💖</div>
+                <h3>Lo que soy cuando estoy contigo.</h3>
+                <p class="descripcion-cancion">Me recuerda que contigo no entrego partes, me entrego completo, incluso cuando la distancia intenta separarnos.</p>
+                <div class="audio-visualizer" id="visualizer-1">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <audio controls data-visualizer="visualizer-1" volume="0.1">
+                    <source src="musica/cancion1.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+                <div class="nombre-cancion">Alma, Corazón y Vida – Los Panchos</div>
+            </div>
+
+            <!-- Canción 2 -->
+            <div class="cancion-card">
+                <div class="icono-musica">🔥</div>
+                <h3>Juntos incluso en lo complicado</h3>
+                <p class="descripcion-cancion">Representa las etapas difíciles y reales de lo nuestro.<br>No siempre es suave, pero seguimos eligiéndonos y avanzando juntos, pase lo que pase.</p>
+                <div class="audio-visualizer" id="visualizer-2">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <audio controls data-visualizer="visualizer-2" volume="0.1">
+                    <source src="musica/cancion2.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+                <div class="nombre-cancion">$$$ – Bardero$</div>
+            </div>
+
+            <!-- Canción 3 -->
+            <div class="cancion-card">
+                <div class="icono-musica">🫂</div>
+                <h3>Aunque estés lejos, quédate conmigo</h3>
+                <p class="descripcion-cancion">La cercanía no depende del lugar. <br>Aunque estemos lejos, seguimos conectados y presentes el uno en el otro.</p>
+                <div class="audio-visualizer" id="visualizer-3">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <audio controls data-visualizer="visualizer-3" volume="0.1">
+                    <source src="musica/cancion3.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+                <div class="nombre-cancion">No Te Apartes de Mí – Vicentico</div>
+            </div>
+
+            <!-- Canción 4 -->
+            <div class="cancion-card">
+                <div class="icono-musica">🌙</div>
+                <h3>Mi paz tiene tu nombre</h3>
+                <p class="descripcion-cancion">Habla de cómo te veo: alguien que trae calma y luz a mi vida.<br>Contigo, todo se siente más seguro y verdadero.</p>
+                <div class="audio-visualizer" id="visualizer-4">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <audio controls data-visualizer="visualizer-4" volume="0.1">
+                    <source src="musica/cancion4.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+                <div class="nombre-cancion">Ángel – Elefante</div>
+            </div>
+
+            <!-- Canción 5 -->
+            <div class="cancion-card">
+                <div class="icono-musica">🌟</div>
+                <h3>Cuando el mundo se apaga, somos tú y yo</h3>
+                <p class="descripcion-cancion">Esta canción representa nuestra complicidad y esos momentos íntimos donde no hacen falta palabras, solo sentirnos cerca.</p>
+                <div class="audio-visualizer" id="visualizer-5">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <audio controls data-visualizer="visualizer-5" volume="0.1">
+                    <source src="musica/cancion5.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+                <div class="nombre-cancion">Noche Sensorial – Esteman</div>
+            </div>
+
+            <!-- Canción 6 -->
+            <div class="cancion-card">
+                <div class="icono-musica">💐</div>
+                <h3>Amarte le dio sentido a todo</h3>
+                <p class="descripcion-cancion">Resume lo que somos: un amor que da propósito, que resiste la distancia y que sigue eligiéndose cada día.</p>
+                <div class="audio-visualizer" id="visualizer-6">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <audio controls data-visualizer="visualizer-6" volume="0.1">
+                    <source src="musica/cancion6.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+                <div class="nombre-cancion">Ya No Vivo Por Vivir – Juan Gabriel & Natalia Lafourcade</div>
+            </div>
+        </div>
+        
+        <p class="nota-musica">
+            🎵 PORQUE AL FINAL, ENTRE CANCIONES, DISTANCIA Y MOMENTOS COMPARTIDOS, <br>SIEMPRE SEGUIMOS SIENDO TÚ Y YO.💕
+        </p>
+    </section>
+
+    <!-- PROMESAS ILUMINADAS -->
+    <section class="promesas">
+        <h2>🕯️ MIS PROMESAS PARA TI 🕯️</h2>
+        <p class="descripcion-promesas">Enciende cada vela para descubrir una promesa que te hago desde el corazón 💫</p>
+        
+        <div class="velas-container">
+            <!-- Vela 1 -->
+            <div class="vela-item" onclick="encenderVela(1)">
+                <div class="vela" id="vela-1">
+                    <div class="llama"></div>
+                    <div class="cuerpo-vela"></div>
+                    <div class="base-vela"></div>
+                </div>
+                <div class="promesa-texto" id="promesa-1">
+                    <p>Prometo elegirnos cada día, incluso cuando el camino se complique.💕</p>
+                </div>
+            </div>
+
+            <!-- Vela 2 -->
+            <div class="vela-item" onclick="encenderVela(2)">
+                <div class="vela" id="vela-2">
+                    <div class="llama"></div>
+                    <div class="cuerpo-vela"></div>
+                    <div class="base-vela"></div>
+                </div>
+                <div class="promesa-texto" id="promesa-2">
+                    <p>Prometo cuidarte y cuidarnos, con respeto, paciencia y amor.💕</p>
+                </div>
+            </div>
+
+            <!-- Vela 3 -->
+            <div class="vela-item" onclick="encenderVela(3)">
+                <div class="vela" id="vela-3">
+                    <div class="llama"></div>
+                    <div class="cuerpo-vela"></div>
+                    <div class="base-vela"></div>
+                </div>
+                <div class="promesa-texto" id="promesa-3">
+                    <p>Prometo escucharte y dejarme escuchar, para crecer juntos y no alejarnos.💕</p>
+                </div>
+            </div>
+
+            <!-- Vela 4 -->
+            <div class="vela-item" onclick="encenderVela(4)">
+                <div class="vela" id="vela-4">
+                    <div class="llama"></div>
+                    <div class="cuerpo-vela"></div>
+                    <div class="base-vela"></div>
+                </div>
+                <div class="promesa-texto" id="promesa-4">
+                    <p>Prometo ser un lugar seguro para ti, así como tú lo eres para mí.💕</p>
+                </div>
+            </div>
+
+            <!-- Vela 5 -->
+            <div class="vela-item" onclick="encenderVela(5)">
+                <div class="vela" id="vela-5">
+                    <div class="llama"></div>
+                    <div class="cuerpo-vela"></div>
+                    <div class="base-vela"></div>
+                </div>
+                <div class="promesa-texto" id="promesa-5">
+                    <p>Prometo celebrar lo que somos, sin compararnos con nadie más.💕</p>
+                </div>
+            </div>
+
+            <!-- Vela 6 -->
+            <div class="vela-item" onclick="encenderVela(6)">
+                <div class="vela" id="vela-6">
+                    <div class="llama"></div>
+                    <div class="cuerpo-vela"></div>
+                    <div class="base-vela"></div>
+                </div>
+                <div class="promesa-texto" id="promesa-6">
+                    <p>Prometo amarte por siempre, en esta vida y en todas las que vengan. Eres mi para siempre 💍</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RAZONES POR LAS QUE TE AMO - CON TARJETAS QUE SE VOLTEAN -->
+    <section class="razones">
+        <h2>💝 RAZONES POR LAS QUE TE ELIJO</h2>
+        <p class="descripcion-razones">Al aplastar o dar clic las tarjetas se daran la vuelta para revelar razones por las que te elijo!!!</p>
+        
+        <div class="razones-grid">
+            <!-- Tarjeta 1 -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="emoji">😌✨</div>
+                        <p class="flip-hint"></p>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Te elijo porque incluso loca eres mi calma.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="emoji">🤑🫦</div>
+                        <p class="flip-hint"></p>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Te elijo porque tus defectos también me gustan.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="emoji">🏡❤️</div>
+                        <p class="flip-hint"></p>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Te elijo porque me haces sentir en casa.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 4 -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="emoji">🔐😘</div>
+                        <p class="flip-hint"></p>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Te elijo porque no huyes cuando las cosas se ponen difíciles.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 5 -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="emoji">🔮✨</div>
+                        <p class="flip-hint"></p>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Te elijo porque contigo el futuro no asusta.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 6 -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="emoji">🙊😊</div>
+                        <p class="flip-hint"></p>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Te elijo porque mi cuerpito caribeño te elige.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 7 -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="emoji">😈🥰</div>
+                        <p class="flip-hint"></p>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Te elijo porque cuando me miras, siento que soy tuyo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 8 -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="emoji">🫦🙏</div>
+                        <p class="flip-hint"></p>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Te elijo porque eres mi tentación favorita.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 9 -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="emoji">💞♾️</div>
+                        <p class="flip-hint"></p>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Te elijo porque me eliges también.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <p class="nota-razones">
+           ESTAS SON SOLO ALGUNAS DE LAS INFINITAS RAZONES POR LAS QUE TE ELIJO. 💫💖
+        </p>
+    </section>
+
+    <!-- JARDÍN DE PEONÍAS -->
+    <section class="jardin">
+        <h2>🌸 JARDÍN DE FLORECITAS QUE TE GUSTAN 🌸</h2>
+        <p class="descripcion-jardin">Cada florecita guarda un mensaje especial. Toca las flores para verlas florecer 🌺</p>
+        
+        <div class="jardin-container">
+            <!-- Peonía 1 -->
+            <div class="peonia-item" onclick="florecerPeonia(1)">
+                <div class="peonia" id="peonia-1">
+                    <!-- Capa exterior (8 pétalos grandes) -->
+                    <div class="petalo exterior p1"></div>
+                    <div class="petalo exterior p2"></div>
+                    <div class="petalo exterior p3"></div>
+                    <div class="petalo exterior p4"></div>
+                    <div class="petalo exterior p5"></div>
+                    <div class="petalo exterior p6"></div>
+                    <div class="petalo exterior p7"></div>
+                    <div class="petalo exterior p8"></div>
+                    
+                    <!-- Capa media (8 pétalos medianos) -->
+                    <div class="petalo medio m1"></div>
+                    <div class="petalo medio m2"></div>
+                    <div class="petalo medio m3"></div>
+                    <div class="petalo medio m4"></div>
+                    <div class="petalo medio m5"></div>
+                    <div class="petalo medio m6"></div>
+                    <div class="petalo medio m7"></div>
+                    <div class="petalo medio m8"></div>
+                    
+                    <!-- Capa interior (6 pétalos pequeños) -->
+                    <div class="petalo interior i1"></div>
+                    <div class="petalo interior i2"></div>
+                    <div class="petalo interior i3"></div>
+                    <div class="petalo interior i4"></div>
+                    <div class="petalo interior i5"></div>
+                    <div class="petalo interior i6"></div>
+                    
+                    <div class="centro"></div>
+                    <div class="tallo"></div>
+                    <div class="hoja h1"></div>
+                    <div class="hoja h2"></div>
+                </div>
+                <div class="mensaje-peonia" id="mensaje-peonia-1">
+                    <p>Cada día construimos lo nuestro, incluso a la distancia. 🌺</p>
+                </div>
+            </div>
+
+            <!-- Peonía 2 -->
+            <div class="peonia-item" onclick="florecerPeonia(2)">
+                <div class="peonia" id="peonia-2">
+                    <!-- Capa exterior (8 pétalos grandes) -->
+                    <div class="petalo exterior p1"></div>
+                    <div class="petalo exterior p2"></div>
+                    <div class="petalo exterior p3"></div>
+                    <div class="petalo exterior p4"></div>
+                    <div class="petalo exterior p5"></div>
+                    <div class="petalo exterior p6"></div>
+                    <div class="petalo exterior p7"></div>
+                    <div class="petalo exterior p8"></div>
+                    
+                    <!-- Capa media (8 pétalos medianos) -->
+                    <div class="petalo medio m1"></div>
+                    <div class="petalo medio m2"></div>
+                    <div class="petalo medio m3"></div>
+                    <div class="petalo medio m4"></div>
+                    <div class="petalo medio m5"></div>
+                    <div class="petalo medio m6"></div>
+                    <div class="petalo medio m7"></div>
+                    <div class="petalo medio m8"></div>
+                    
+                    <!-- Capa interior (6 pétalos pequeños) -->
+                    <div class="petalo interior i1"></div>
+                    <div class="petalo interior i2"></div>
+                    <div class="petalo interior i3"></div>
+                    <div class="petalo interior i4"></div>
+                    <div class="petalo interior i5"></div>
+                    <div class="petalo interior i6"></div>
+                    
+                    <div class="centro"></div>
+                    <div class="tallo"></div>
+                    <div class="hoja h1"></div>
+                    <div class="hoja h2"></div>
+                </div>
+                <div class="mensaje-peonia" id="mensaje-peonia-2">
+                    <p>Nuestro amor sabe esperar y también florecer.🌹</p>
+                </div>
+            </div>
+
+            <!-- Peonía 3 -->
+            <div class="peonia-item" onclick="florecerPeonia(3)">
+                <div class="peonia" id="peonia-3">
+                    <!-- Capa exterior (8 pétalos grandes) -->
+                    <div class="petalo exterior p1"></div>
+                    <div class="petalo exterior p2"></div>
+                    <div class="petalo exterior p3"></div>
+                    <div class="petalo exterior p4"></div>
+                    <div class="petalo exterior p5"></div>
+                    <div class="petalo exterior p6"></div>
+                    <div class="petalo exterior p7"></div>
+                    <div class="petalo exterior p8"></div>
+                    
+                    <!-- Capa media (8 pétalos medianos) -->
+                    <div class="petalo medio m1"></div>
+                    <div class="petalo medio m2"></div>
+                    <div class="petalo medio m3"></div>
+                    <div class="petalo medio m4"></div>
+                    <div class="petalo medio m5"></div>
+                    <div class="petalo medio m6"></div>
+                    <div class="petalo medio m7"></div>
+                    <div class="petalo medio m8"></div>
+                    
+                    <!-- Capa interior (6 pétalos pequeños) -->
+                    <div class="petalo interior i1"></div>
+                    <div class="petalo interior i2"></div>
+                    <div class="petalo interior i3"></div>
+                    <div class="petalo interior i4"></div>
+                    <div class="petalo interior i5"></div>
+                    <div class="petalo interior i6"></div>
+                    
+                    <div class="centro"></div>
+                    <div class="tallo"></div>
+                    <div class="hoja h1"></div>
+                    <div class="hoja h2"></div>
+                </div>
+                <div class="mensaje-peonia" id="mensaje-peonia-3">
+                    <p>Lo nuestro crece con paciencia, cuidado y amor. 🌻</p>
+                </div>
+            </div>
+
+            <!-- Peonía 4 -->
+            <div class="peonia-item" onclick="florecerPeonia(4)">
+                <div class="peonia" id="peonia-4">
+                    <!-- Capa exterior (8 pétalos grandes) -->
+                    <div class="petalo exterior p1"></div>
+                    <div class="petalo exterior p2"></div>
+                    <div class="petalo exterior p3"></div>
+                    <div class="petalo exterior p4"></div>
+                    <div class="petalo exterior p5"></div>
+                    <div class="petalo exterior p6"></div>
+                    <div class="petalo exterior p7"></div>
+                    <div class="petalo exterior p8"></div>
+                    
+                    <!-- Capa media (8 pétalos medianos) -->
+                    <div class="petalo medio m1"></div>
+                    <div class="petalo medio m2"></div>
+                    <div class="petalo medio m3"></div>
+                    <div class="petalo medio m4"></div>
+                    <div class="petalo medio m5"></div>
+                    <div class="petalo medio m6"></div>
+                    <div class="petalo medio m7"></div>
+                    <div class="petalo medio m8"></div>
+                    
+                    <!-- Capa interior (6 pétalos pequeños) -->
+                    <div class="petalo interior i1"></div>
+                    <div class="petalo interior i2"></div>
+                    <div class="petalo interior i3"></div>
+                    <div class="petalo interior i4"></div>
+                    <div class="petalo interior i5"></div>
+                    <div class="petalo interior i6"></div>
+                    
+                    <div class="centro"></div>
+                    <div class="tallo"></div>
+                    <div class="hoja h1"></div>
+                    <div class="hoja h2"></div>
+                </div>
+                <div class="mensaje-peonia" id="mensaje-peonia-4">
+                    <p>Aunque no siempre estemos cerca, siempre estamos juntos. 💐</p>
+                </div>
+            </div>
+
+            <!-- Peonía 5 -->
+            <div class="peonia-item" onclick="florecerPeonia(5)">
+                <div class="peonia" id="peonia-5">
+                    <!-- Capa exterior (8 pétalos grandes) -->
+                    <div class="petalo exterior p1"></div>
+                    <div class="petalo exterior p2"></div>
+                    <div class="petalo exterior p3"></div>
+                    <div class="petalo exterior p4"></div>
+                    <div class="petalo exterior p5"></div>
+                    <div class="petalo exterior p6"></div>
+                    <div class="petalo exterior p7"></div>
+                    <div class="petalo exterior p8"></div>
+                    
+                    <!-- Capa media (8 pétalos medianos) -->
+                    <div class="petalo medio m1"></div>
+                    <div class="petalo medio m2"></div>
+                    <div class="petalo medio m3"></div>
+                    <div class="petalo medio m4"></div>
+                    <div class="petalo medio m5"></div>
+                    <div class="petalo medio m6"></div>
+                    <div class="petalo medio m7"></div>
+                    <div class="petalo medio m8"></div>
+                    
+                    <!-- Capa interior (6 pétalos pequeños) -->
+                    <div class="petalo interior i1"></div>
+                    <div class="petalo interior i2"></div>
+                    <div class="petalo interior i3"></div>
+                    <div class="petalo interior i4"></div>
+                    <div class="petalo interior i5"></div>
+                    <div class="petalo interior i6"></div>
+                    
+                    <div class="centro"></div>
+                    <div class="tallo"></div>
+                    <div class="hoja h1"></div>
+                    <div class="hoja h2"></div>
+                </div>
+                <div class="mensaje-peonia" id="mensaje-peonia-5">
+                    <p>Contigo aprendí que amar también es compartir la vida. 🌷</p>
+                </div>
+            </div>
+
+            <!-- Peonía 6 -->
+            <div class="peonia-item" onclick="florecerPeonia(6)">
+                <div class="peonia" id="peonia-6">
+                    <!-- Capa exterior (8 pétalos grandes) -->
+                    <div class="petalo exterior p1"></div>
+                    <div class="petalo exterior p2"></div>
+                    <div class="petalo exterior p3"></div>
+                    <div class="petalo exterior p4"></div>
+                    <div class="petalo exterior p5"></div>
+                    <div class="petalo exterior p6"></div>
+                    <div class="petalo exterior p7"></div>
+                    <div class="petalo exterior p8"></div>
+                    
+                    <!-- Capa media (8 pétalos medianos) -->
+                    <div class="petalo medio m1"></div>
+                    <div class="petalo medio m2"></div>
+                    <div class="petalo medio m3"></div>
+                    <div class="petalo medio m4"></div>
+                    <div class="petalo medio m5"></div>
+                    <div class="petalo medio m6"></div>
+                    <div class="petalo medio m7"></div>
+                    <div class="petalo medio m8"></div>
+                    
+                    <!-- Capa interior (6 pétalos pequeños) -->
+                    <div class="petalo interior i1"></div>
+                    <div class="petalo interior i2"></div>
+                    <div class="petalo interior i3"></div>
+                    <div class="petalo interior i4"></div>
+                    <div class="petalo interior i5"></div>
+                    <div class="petalo interior i6"></div>
+                    
+                    <div class="centro"></div>
+                    <div class="tallo"></div>
+                    <div class="hoja h1"></div>
+                    <div class="hoja h2"></div>
+                </div>
+                <div class="mensaje-peonia" id="mensaje-peonia-6">
+                    <p>Gracias por florecer conmigo, incluso en los días grises. 🌺💕</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mariposas-container" id="mariposas-jardin"></div>
+    </section>
+
+    <!-- ÁLBUM DE POLAROIDS FLOTANTES (usando fotos de la galería) -->
+    <section class="polaroids">
+        <h2>📸 NUESTROS MOMENTOS CAOTURADOS EN EL TIEMPO📸</h2>
+        <p class="descripcion-polaroids">Los recuerdos que atesoro en mi corazón. Cada foto cuenta una historia especial.</p>
+        
+        <div class="polaroids-container">
+            <!-- Polaroid 1 -->
+            <div class="polaroid" style="--rotation: -5deg; --delay: 0s;">
+                <div class="polaroid-foto">
+                    <img src="fotos/foto1.jpg" alt="Momento 1">
+                </div>
+                <div class="polaroid-texto">JUNTOS SIEMPRE 💞</div>
+            </div>
+
+            <!-- Polaroid 2 -->
+            <div class="polaroid" style="--rotation: 8deg; --delay: 0.3s;">
+                <div class="polaroid-foto">
+                    <img src="fotos/foto2.jpg" alt="Momento 2">
+                </div>
+                <div class="polaroid-texto">NUESTRAS CITAS ✨</div>
+            </div>
+
+            <!-- Polaroid 3 -->
+            <div class="polaroid" style="--rotation: -3deg; --delay: 0.6s;">
+                <div class="polaroid-foto">
+                    <img src="fotos/foto3.jpg" alt="Momento 3">
+                </div>
+                <div class="polaroid-texto">CUENQUITA 🌎</div>
+            </div>
+
+            <!-- Polaroid 4 -->
+            <div class="polaroid" style="--rotation: 6deg; --delay: 0.9s;">
+                <div class="polaroid-foto">
+                    <img src="fotos/foto4.jpg" alt="Momento 4">
+                </div>
+                <div class="polaroid-texto">ORACIO 🐈</div>
+            </div>
+
+            <!-- Polaroid 5 -->
+            <div class="polaroid" style="--rotation: -7deg; --delay: 1.2s;">
+                <div class="polaroid-foto">
+                    <img src="fotos/foto5.jpg" alt="Momento 5">
+                </div>
+                <div class="polaroid-texto">COMIDITAS 🍔</div>
+            </div>
+
+            <!-- Polaroid 6 -->
+            <div class="polaroid" style="--rotation: 4deg; --delay: 1.5s;">
+                <div class="polaroid-foto">
+                    <img src="fotos/foto6.jpg" alt="Momento 6">
+                </div>
+                <div class="polaroid-texto">FAMILIA COMPLETA 💞</div>
+            </div>
+
+            <!-- Polaroid 7 -->
+            <div class="polaroid" style="--rotation: -6deg; --delay: 1.8s;">
+                <div class="polaroid-foto">
+                    <img src="fotos/foto7.jpg" alt="Momento 7">
+                </div>
+                <div class="polaroid-texto">PRIMERA NAVIDAD 🎄</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIDEO ESPECIAL -->
+    <section class="video-especial">
+        <h2>🎥 UN RECUERDO JUNTOS 🎥</h2>
+        <p class="descripcion-video">Un recuerdo capturado de los muchos que tenemos en video, porque hay momentos que las fotos no pueden contener. ✨</p>
+        
+         <div class="video-container">
+            <div class="video-frame" id="video-wrapper">
+                <div class="video-overlay" id="video-overlay" onclick="reproducirVideo()">
+                    <div class="play-button">
+                        <svg viewBox="0 0 68 48" width="68" height="48">
+                            <path d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" fill="#f00"></path>
+                            <path d="M 45,24 27,14 27,34" fill="#fff"></path>
+                        </svg>
+                    </div>
+                </div>
+                <video id="video-nuestro" preload="metadata">
+                    <source src="videos/momento-juntos.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+                <p class="video-caption">UN PEDACITO DE NUESTRA HISTORIA EN MOVIMIENTO. ❤️</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALENDARIO DE AMOR -->
+    <section class="calendario-amor">
+        <h2>📅 NUESTRO CALENDARIO DE AMOR 📅</h2>
+        <p class="descripcion-calendario">Cada fecha marcada es un nuevo motivo para celebrar nuestro amor.💖</p>
+        
+        <div class="calendario-container">
+            <div class="evento-calendario cumple-ella">
+                <div class="fecha-icono">🎂</div>
+                <div class="fecha-info">
+                    <h3>CUMPLEAÑOS DE MI PRECIOSOTA</h3>
+                    <p class="fecha-numero">27 de Agosto</p>
+                    <p class="contador-dias" id="dias-cumple-ella"></p>
+                </div>
+            </div>
+
+            <div class="evento-calendario aniversario-mensual">
+                <div class="fecha-icono">💕</div>
+                <div class="fecha-info">
+                    <h3>ANIVERSARIO MENSUAL</h3>
+                    <p class="fecha-numero">Cada día 30</p>
+                    <p class="contador-dias" id="dias-aniversario-mes"></p>
+                    <p class="meses-juntos" id="meses-totales"></p>
+                </div>
+            </div>
+
+            <div class="evento-calendario aniversario-anual">
+                <div class="fecha-icono">🎉</div>
+                <div class="fecha-info">
+                    <h3>NUESTRO PRIMER AÑO</h3>
+                    <p class="fecha-numero">30 de Marzo, 2026</p>
+                    <p class="contador-dias" id="dias-aniversario-ano"></p>
+                </div>
+            </div>
+
+            <div class="evento-calendario san-valentin">
+                <div class="fecha-icono">💝</div>
+                <div class="fecha-info">
+                    <h3>SAN VALENTÍN</h3>
+                    <p class="fecha-numero">14 de Febrero</p>
+                    <p class="contador-dias" id="dias-san-valentin"></p>
+                </div>
+            </div>
+
+            <div class="evento-calendario navidad">
+                <div class="fecha-icono">🎄</div>
+                <div class="fecha-info">
+                    <h3>PRÓXIMA NAVIDAD JUNTOS</h3>
+                    <p class="fecha-numero">25 de Diciembre</p>
+                    <p class="contador-dias" id="dias-navidad"></p>
+                </div>
+            </div>
+
+            <div class="evento-calendario futuro">
+                <div class="fecha-icono">💍</div>
+                <div class="fecha-info">
+                    <h3>NUESTRO FUTURO</h3>
+                    <p class="fecha-numero">Por decidir juntos...</p>
+                    <p class="mensaje-especial">Cada día es una oportunidad para crear nuevos recuerdos ✨</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARTA INTERACTIVA -->
+    <section class="carta-interactiva">
+        <h2>Una Carta Para Ti 💌</h2>
+        
+        <div class="sobre-container">
+            <div class="sobre">
+                <div class="tapa"></div>
+                <div class="carta">
+                    <div class="mensaje-carta">
+                        <p class="saludo-inicial">Mi muñequita preciosa,</p>
+                        
+                        <p>Aunque la distancia nos tenga separados en este San Valentín, quiero que sepas lo bien que me siento de tenerte en mi vida. Estar contigo, incluso a la distancia, me da una paz y una alegría que no encuentro en ningún otro lugar.</p>
+                        
+                        <p>Admiro tu sinceridad, tu forma de hablar siempre con el corazón, y esa manera tan tuya de hacerme sentir acompañado aunque no estés cerca. Y sí, hasta tus defectos me enamoran, porque son parte de ti, y yo no quiero cambiar nada de lo que eres.</p>
+                        
+                        <p>Sé que a veces me he portado mal contigo, y no siempre he sido el hombre que mereces. Pero quiero que tengas claro que nunca voy a dejarte, ni a intentar que seas alguien diferente. Te amo tal como eres, con todo lo que te hace única.</p>
+                        
+                        <p>Gracias por tu paciencia, por aguantar mis errores y seguir creyendo en nosotros. Eso me demuestra lo grande que es tu amor, y me da fuerzas para seguir construyendo este camino contigo, aunque hoy nos toque vivirlo en la distancia. Eres mi persona favorita, mi compañera de aventuras, mi amor verdadero.</p>
+                        
+                        <p>Te amo más de lo que las palabras pueden expresar.</p>
+                        
+                        <p style="text-align: right; margin-top: 25px;">Con todo mi amor,</p>
+                        <p style="text-align: right;">Alexander Agualongo</p>
+                        <p style="text-align: right;">Tu morlaquito... SIEMPRE TUYO💕</p>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="btn-sobre" onclick="abrirSobre()">Abrir carta 💌</button>
+        </div>
+    </section>
+
+    <!-- BOTÓN INTERACTIVO -->
+    <section class="boton-interactivo">
+        <h2>Una Pregunta Importante 💭</h2>
+        <p class="pregunta">¿Quieres ser mi compañera de por vida? 💕</p>
+        
+        <div class="botones-container">
+            <button class="btn-si" onclick="respuestaSi()">¡Sí! 💖</button>
+            <button class="btn-no" id="btnNo" onmouseover="moverBotonNo()">No</button>
+        </div>
+        
+        <div class="respuesta-amor" id="respuesta"></div>
+    </section>
+
+    <!-- SECCIÓN FINAL CON FUEGOS ARTIFICIALES -->
+    <section class="final">
+        <canvas id="fireworks-canvas"></canvas>
+        
+        <!-- EFECTOS ADICIONALES -->
+        <div class="brillo-magico"></div>
+        <div class="particulas-romanticicas">
+            <span class="particula-romantica">💕</span>
+            <span class="particula-romantica">🌹</span>
+            <span class="particula-romantica">💖</span>
+            <span class="particula-romantica">✨</span>
+            <span class="particula-romantica">💕</span>
+            <span class="particula-romantica">🌹</span>
+            <span class="particula-romantica">💖</span>
+            <span class="particula-romantica">✨</span>
+            <span class="particula-romantica">💕</span>
+        </div>
+        
+        <!-- MENSAJE FINAL -->
+        <div class="mensaje-final">
+            <!-- GIF Y MENSAJE DE SAN VALENTÍN -->
+            <div class="gif-container">
+                <img src="imagenes/amor.gif" alt="GIF de amor" class="gif-final">
+                <p class="texto-gif">¡Feliz San Valentín! 💖</p>
+            </div>
+
+            <!-- CONTENEDOR PRINCIPAL CON DISEÑO HORIZONTAL -->
+            <div class="contenido-final-horizontal">
+                <!-- SECCIÓN IZQUIERDA: AGRADECIMIENTOS -->
+                <div class="seccion-agradecimientos">
+                    <p>Gracias por tu tiempo conmigo<br>Gracias por amarme como soy<br>
+                    Gracias por ser TÚ!</p>
+                </div>
+                
+                <!-- SECCIÓN DERECHA: BOTÓN DE AUDIO -->
+                <div class="seccion-audio">
+                    <div class="audio-personalizado-container">
+                        <button id="btn-audio-personalizado" class="btn-audio-personalizado" onclick="reproducirAudioPersonalizado()">
+                            <span class="icono-audio">🎙️</span>
+                            <span class="texto-boton">Escucha mi voz para ti 💕</span>
+                            <div class="ondas-audio" id="ondas-audio"></div>
+                        </button>
+                        <p class="subtexto-audio">Un mensaje especial de mi corazón para el tuyo.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="firma">Con todo mi amor, tu amado futuro esposo🤑🤑</p>
+        </div>
+        
+        <!-- AUDIO PERSONALIZADO OCULTO -->
+        <audio id="audio-personalizado" preload="metadata">
+            <source src="tu_audio.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
