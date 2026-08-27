@@ -1,0 +1,6 @@
+# Archivos grandes
+tu_audio.mp3
+*.tmp
+
+# Git
+.git/

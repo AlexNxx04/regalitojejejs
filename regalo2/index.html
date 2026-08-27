@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abre esto cuando... 💌</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="regalo2.css?v=14">
+</head>
+<body>
+
+    <!-- MUSICA DE FONDO (la misma de la página principal) -->
+    <audio id="musica-fondo" loop>
+        <source src="../musica/fondo.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <!-- INICIO / PORTADA -->
+    <section class="inicio" id="inicio">
+        <div class="corazones-flotantes" id="corazones-flotantes"></div>
+        <div class="inicio-contenido">
+            <div class="inicio-icono">💌</div>
+            <h1 class="inicio-titulo">Un Regalo para Ti</h1>
+            <p class="inicio-subtitulo">Pequeñas cartas guardadas con amor, para cada rincon de tu shungito y de tu vida gorda.<br>Feliz 22 mi pequeña Sirey, la mejor novia del mundo!!!! ❤️.</p>
+            <button class="btn-entrar" id="btn-entrar">Descubre tus cartitas 💌</button>
+        </div>
+    </section>
+
+    <!-- SECCION ABRE ESTO CUANDO -->
+    <section class="seccion-sobres oculta" id="sobres">
+        <h2 class="seccion-titulo">ABRE ESTO CUANDO...</h2>
+        <p class="seccion-descripcion">Elige el sobre que haga juego con tu corazón hoy. 💕</p>
+        <div class="sobres-grid" id="sobres-grid"></div>
+        <div class="volver-boveda">
+            <a class="btn-volver" id="btn-volver" href="../index.html?abrir=boveda">← Volver a la bóveda</a>
+        </div>
+    </section>
+
+    <!-- MODAL DE CARTA -->
+    <div class="modal-carta" id="modal-carta">
+        <div class="modal-papel">
+            <div class="modal-contenido">
+                <button class="modal-cerrar" id="modal-cerrar">✕</button>
+                <div class="modal-emoji" id="modal-emoji"></div>
+                <h3 class="modal-etiqueta" id="modal-etiqueta"></h3>
+                <p class="modal-texto" id="modal-texto"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL ESPECIAL: CUANTO TE AMO -->
+    <div class="modal-carta" id="modal-especial">
+        <div class="modal-papel modal-papel-especial">
+            <div class="modal-contenido modal-especial-contenido">
+                <button class="modal-cerrar" id="modal-especial-cerrar">✕</button>
+                <div class="modal-emoji">💖</div>
+                <h3 class="modal-etiqueta">Abre para saber lo mucho que te amo</h3>
+                <p class="modal-texto" id="texto-especial"></p>
+                <div class="galeria-amor" id="galeria-amor"></div>
+                <div class="audio-amor-container">
+                    <audio id="audio-amor" preload="metadata">
+                        <source src="../voz-para-ti.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                    <button id="btn-audio-amor" class="btn-audio-amor">🎙️</button>
+                    <p class="texto-audio-amor">Mi voz para ti</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LIGHTBOX FOTOS -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-cerrar" id="lightbox-cerrar">✕</button>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="Foto">
+    </div>
+
+    <script src="regalo2.js?v=8"></script>
+</body>
+</html>
